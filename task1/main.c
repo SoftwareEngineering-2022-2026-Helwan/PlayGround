@@ -15,11 +15,19 @@ int main(void)
 {
 	createStack(&stack);
 
+	int runOption;
     switch (taskMenu())
     {
     case 1:
-	    runCalcOnOption(calcOptionMenu());
-	    traversStack(&stack,&displayFn);
+	    do
+	    {
+		    runOption = calcOptionMenu();
+		    if(runOption != 0)
+		    {
+			    runCalcOnOption(runOption);
+		    }
+
+	    }while(runOption != 0);
         break;
     case 2:
         printf("inside Unit con\n");
@@ -43,7 +51,7 @@ int main(void)
 
 void displayFn(StackEntity item)
 {
-	printf("item: %d",item);
+	printf("item: %d\n",item);
 }
 
 
@@ -108,7 +116,8 @@ void runCalcOnOption(int option)
 			printf("[=]result: %d / %d = %2f\n",n1,n2,divR);
                         break;
 		case 5:
-			printf("history");
-			
+			printf("\n");
+			traversStack(&stack,&displayFn);
+
 	}
 }
