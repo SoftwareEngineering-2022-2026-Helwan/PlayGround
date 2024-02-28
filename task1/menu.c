@@ -71,4 +71,7 @@ int moneyConvOptionMenu()
 }
 
 
-
+void displayFn(StackEntity item)
+{
+        printf("item: %d\n",item);
+}

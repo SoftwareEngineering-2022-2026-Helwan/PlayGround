@@ -17,6 +17,6 @@ int unitConvOptionMenu();
 //========( money converter menu )========
 int moneyConvOptionMenu();
 
-
-
+//========( display function )========
+void displayFn(StackEntity);
 #endif
