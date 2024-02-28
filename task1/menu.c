@@ -21,7 +21,7 @@ int taskMenu()
     printf("3) Money Converter\n");
     printf("4) Counter\n");
     printf("5) History\n");
-    
+    printf("[?] select option: ");
     
     return validateInputTo(1,5);
 }
@@ -34,10 +34,11 @@ int calcOptionMenu()
     printf("3) Multiply\n");
     printf("4) Divide\n");
     printf("5) History\n");
-
+    printf("[?] select option: ");
     return validateInputTo(1,5);    
 
 }
+
 
 
 int unitConvOptionMenu()
@@ -48,7 +49,7 @@ int unitConvOptionMenu()
     printf("3) Hr --> Min\n");
     printf("4) Min --> Hr\n");
     printf("5) History\n");
-
+    printf("[?] select option: ");
     return validateInputTo(1,5);    
 
 }
@@ -64,6 +65,7 @@ int moneyConvOptionMenu()
     printf("4) Sar --> Euro\n");
     printf("5) History\n");
 
+    printf("[?] select option: ");
     return validateInputTo(1,5);    
 
 }
