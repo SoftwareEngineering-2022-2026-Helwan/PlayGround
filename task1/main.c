@@ -59,7 +59,10 @@ void displayFn(StackEntity item)
 void runCalcOnOption(int option)
 {
 	int n1, n2;
-	printf("[+] Entet Option: ");
+	if (option != 5)
+	{
+		printf("[+] Entet Option: ");
+	}
         switch(option)
 	{
 		case 1:
