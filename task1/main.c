@@ -10,7 +10,7 @@ Stack stack;
 
 // |==========( include your main.c code her )==========|
 
-#include "./runCalc.c"
+#include "./calc/runCalc.c"
 
 int main(void)
 {
