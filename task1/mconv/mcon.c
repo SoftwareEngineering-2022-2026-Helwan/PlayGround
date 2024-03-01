@@ -1,4 +1,4 @@
-#include "mcon.h"
+
 //1
 double coverttopound(double x){
 return x/(30.90);
