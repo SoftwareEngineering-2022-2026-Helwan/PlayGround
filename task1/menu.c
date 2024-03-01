@@ -8,7 +8,7 @@ int validateInputTo(int min, int max)
     {
 	    printf("[?] select option: ");
 	    scanf("%d",&num);
-    
+
     } while (num < min || num > max );
 
     return num;
@@ -22,7 +22,7 @@ int taskMenu()
     printf("3) Money Converter\n");
     printf("4) Counter\n");
     printf("5) History\n\n");
-    
+
     return validateInputTo(0,5);
 }
 
@@ -35,7 +35,7 @@ int calcOptionMenu()
     printf("3) Multiply\n");
     printf("4) Divide\n");
     printf("5) History\n\n");
-    return validateInputTo(0,5);    
+    return validateInputTo(0,5);
 
 }
 
@@ -44,13 +44,13 @@ int calcOptionMenu()
 int unitConvOptionMenu()
 {
     printf("Choose Operation :\n");
-    printf("0) back\n");	
+    printf("0) back\n");
     printf("1) M --> Cm\n");
     printf("2) Cm --> M\n");
     printf("3) Hr --> Min\n");
     printf("4) Min --> Hr\n");
     printf("5) History\n\n");
-    return validateInputTo(0,5);    
+    return validateInputTo(0,5);
 
 }
 
@@ -66,7 +66,7 @@ int moneyConvOptionMenu()
     printf("4) Sar --> Euro\n");
     printf("5) History\n\n");
 
-    return validateInputTo(0,5);    
+    return validateInputTo(0,5);
 
 }
 

@@ -10,7 +10,7 @@ Stack stack;
 
 
 // |==========( include your main.c code her )==========|
-
+#include "./mconv/runMcon.c"
 #include "./calc/runCalc.c"
 #include "./uconv/runUConv.c"
 
@@ -51,8 +51,18 @@ int main(void)
 
 
         break;
-    case 3: 
+    case 3:
         printf("inside Money conv\n");
+        do
+            {
+                    runOption = moneyConvOptionMenu();
+                    if(runOption != 0)
+                    {
+                            runMconvOnOption(runOption);
+                    }
+
+            }while(runOption != 0);
+
         break;
     case 4:
         printf("Enter Counts: \n");
@@ -60,7 +70,7 @@ int main(void)
         scanf("%d",&num);
         count_to(num);
         break;
-    case 5: 
+    case 5:
         printf("inside history\n");
         break;
 
