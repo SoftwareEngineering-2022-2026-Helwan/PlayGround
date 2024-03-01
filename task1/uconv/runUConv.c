@@ -9,11 +9,22 @@ void runUCONVonOption(int option){
             printf("\nEnter unit in meters : ");
             scanf("%d",&num);
 
-            conv = num,M_Cm(num);
-            push(&stack,conv);
-            printf("\n%d m = %d cm\n",conv);
-            break;
+	    /*
+	     
+	       c doesn't allow multi assign
+		ex: 
+		  int x = 1;
+		but
+		int x = 1, 2; // error 
 
+
+	     */
+	    
+            conv = M_Cm(num);  // conv = num , M_Cm(num);  //error here [!] fix i  all cases 2 -> 4  
+            push(&stack,conv);
+            printf("\n%d m = %d cm\n",num,conv); // printf("\n%d m = %d cm\n",conv);   //error here missing num to be printed  [!] fix in all cases 2->4
+            break;
+/*
         case 2:
             printf("\nEnter unit in centimeters : ");
             scanf("%d",&num);
@@ -41,7 +52,7 @@ void runUCONVonOption(int option){
             conv = Min_Hr(num);
             push(&stack,conv);
             printf("\n%d mins = %d hr\n",num,conv);
-            break;
+            break;*/
 
         case 5:
             printf("\n");
