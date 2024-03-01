@@ -3,7 +3,7 @@ void runCalcOnOption(int option)
         int n1, n2;
         if (option != 5)
         {
-                printf("[+] Entet Option: ");
+                printf("[+] Enter Option: ");
         }
         switch(option)
         {
