@@ -1,5 +1,4 @@
 #include "./counter.h"
-#include <stdio.h>
 
 void count_to(int num) {
     int i;

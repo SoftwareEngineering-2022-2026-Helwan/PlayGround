@@ -3,6 +3,7 @@
 #include "./menu.h"
 #include "./calc/calc.h"
 #include "./uconv/uConv.h"
+#include "./counter/counter.h"
 // |==========( global variable her )==========|
 
 Stack stack;
@@ -12,6 +13,7 @@ Stack stack;
 
 #include "./calc/runCalc.c"
 #include "./uconv/runUConv.c"
+
 int main(void)
 {
 	createStack(&stack);
@@ -53,7 +55,10 @@ int main(void)
         printf("inside Money conv\n");
         break;
     case 4:
-        printf("inside Money conv\n");
+        printf("Enter Counts: \n");
+        int num;
+        scanf("%d",&num);
+        count_to(num);
         break;
     case 5: 
         printf("inside history\n");
