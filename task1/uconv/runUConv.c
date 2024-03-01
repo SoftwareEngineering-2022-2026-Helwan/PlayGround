@@ -24,14 +24,14 @@ void runUCONVonOption(int option){
             push(&stack,conv);
             printf("\n%d m = %d cm\n",num,conv); // printf("\n%d m = %d cm\n",conv);   //error here missing num to be printed  [!] fix in all cases 2->4
             break;
-/*
+
         case 2:
             printf("\nEnter unit in centimeters : ");
             scanf("%d",&num);
 
-            conv = num,Cm_M(num);
+            conv = Cm_M(num);
             push(&stack,conv);
-            printf("\n%d cm = %d m\n",conv);
+            printf("\n%d cm = %d m\n",num,conv);
             break;
 
 
@@ -52,7 +52,7 @@ void runUCONVonOption(int option){
             conv = Min_Hr(num);
             push(&stack,conv);
             printf("\n%d mins = %d hr\n",num,conv);
-            break;*/
+            break;
 
         case 5:
             printf("\n");
